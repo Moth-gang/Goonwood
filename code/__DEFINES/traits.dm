@@ -37,6 +37,7 @@
 #define TRAIT_NOSLEEP "Fatal Insomnia"
 #define TRAIT_GOODLOVER "Fabled Lover"
 #define TRAIT_SEEDKNOW "Seed Knower"
+#define TRAIT_TINY "Tiny"
 // ROGUEspecialTRAITS (description when rmb skills button)
 #define TRAIT_CIVILIZEDBARBARIAN "Tavern Brawler"
 #define TRAIT_COMICSANS "Annoying Face"
@@ -141,7 +142,9 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_NOCSIGHT = "Noc blesses my eyes to be unburdened by the night.", //Hearthstone change.
 	TRAIT_MALUMSGRACE = "Malum is my muse.", // Hearthstone change
 	TRAIT_DEATHBYSNOOSNOO = "It's an unlucky thing to share my bed.", // Hearthstone change
-	TRAIT_BOG_TREKKING = "Expert in navigating these lands." // Hearthstone change
+
+	TRAIT_BOG_TREKKING = "Expert in navigating these lands.", // Hearthstone change
+	TRAIT_TINY = span_info("I am tiny in size and quite fragile!"),
 ))
 
 // trait accessor defines
@@ -369,6 +372,7 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define GLASSES_TRAIT "glasses"
 #define VEHICLE_TRAIT "vehicle" // inherited from riding vehicles
 #define INNATE_TRAIT "innate"
+#define SHARD_TRAIT "granter (fragment)" // apple: inherited from shard granters
 
 // unique trait sources, still defines
 #define TRAIT_BOG_TREKKING "trekking"

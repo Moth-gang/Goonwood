@@ -47,6 +47,7 @@
 	H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 5, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/stealing, 5, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/craft/crafting, 3 , TRUE)
 	H.mind.adjust_skillrank(/datum/skill/labor/butchering, 1, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/lockpicking, 4, TRUE)
 	pants = /obj/item/clothing/under/roguetown/trou/leather
@@ -62,7 +63,6 @@
 	beltl = /obj/item/rogueweapon/huntingknife/idagger/steel
 	backpack_contents = list(/obj/item/lockpickring/mundane)
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 	H.change_stat("strength", -1)
 	H.change_stat("perception", 2)
 	H.change_stat("speed", pick(3,4))

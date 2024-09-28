@@ -3,7 +3,7 @@
 	f_title = "Sorceress"
 	tutorial = "Mages are usually grown-up apprentices of wizards. They are seeking adventure, using their arcyne knowledge to aid or ward off other adventurers."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = RACES_ALL_KINDSPLUS
 	outfit = /datum/outfit/job/roguetown/adventurer/mage
 	category_tags = list(CTAG_ADVENTURER)
 
@@ -29,6 +29,7 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/alchemy, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/magic/arcane, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/craft/crafting, 3 , TRUE)
 		H.mind.adjust_skillrank(/datum/skill/labor/butchering, 1, TRUE)
 		if(H.age == AGE_OLD)
 			head = /obj/item/clothing/head/roguetown/wizhat/gen
