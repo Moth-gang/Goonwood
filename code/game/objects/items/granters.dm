@@ -82,7 +82,7 @@
 	icon_state ="Crystal"
 	light_range = 1.5
 	light_power = 150
-	sellprice = 200
+	sellprice = 20
 	drop_sound = 'sound/items/gem.ogg'
 	pickup_sound =  list('sound/vo/mobs/ghost/whisper (1).ogg','sound/vo/mobs/ghost/whisper (2).ogg','sound/vo/mobs/ghost/whisper (3).ogg')
 
@@ -169,16 +169,25 @@
 	granted_trait2 = TRAIT_ZJUMP
 	traitname = "the acrobat"
 	remarks = list("<font color='#f3fd2bfb'>Nothing stops the fleetfooted!", "<font color='#f3fd2bfb'>Which way is up? I forgot!", "<font color='#f3fd2bfb'>The sky is the limits!", "<font color='#f3fd2bfb'>Always land on your feet!", "<font color='#f3fd2bfb'>Who needs stairs?!</font>",)
+
 /obj/item/book/granter/trait/succubus
 	name = "Fragment of the Succubus"
 	light_color = "#b028fffb"
 	color = "#b028fffb"
 	granted_trait = TRAIT_DEATHBYSNOOSNOO
 	granted_trait2 = TRAIT_GOODLOVER
-	sellprice = 150
+	sellprice = 50
 	traitname = "the succubus"
 	remarks = list("<font color='#b028fffb'>They like what they see.", "<font color='#b028fffb'>I can't wait to hear you scream.", "<font color='#b028fffb'>So many hearts to break, so little time.","<font color='#b028fffb'>Without pain, how would they know pleasure?</font>",)
 
+/obj/item/book/granter/trait/north
+	name = "Fragment of the North"
+	light_color = "#28d8fffb"
+	color = "#28d8fffb"
+	granted_trait = TRAIT_VIKINGCAMP
+	sellprice = 150
+	traitname = "the north"
+	remarks = list("<font color='#28d8fffb'>It is important to stay warm.", "<font color='#28d8fffb'>Sail em high.", "<font color='#28d8fffb'>Plug the holes of your ship with a finger.","<font color='#28d8fffb'>Just follow the North Star.</font>",)
 ///ACTION BUTTONS///
 
 /obj/item/book/granter/action

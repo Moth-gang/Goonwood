@@ -140,7 +140,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/carapace/dragon
 	name = "dragonscale armor"
-	desc = "armor crafted from the hardened scales of a dragon."
+	desc = "armor crafted from the hardened bones of a dragon."
 	body_parts_covered = CHEST|GROIN|VITALS
 	color = "red"
 	icon_state = "carapacecuirass"
@@ -151,8 +151,9 @@
 
 /obj/item/clothing/suit/roguetown/armor/carapace/dragon/cuirass
 	name = "dragonscale cuirass"
-	desc = "vest styled dragonscale chest armor sown in layers."
+	desc = "vest styled dragonbone chest armor sown in layers."
 	body_parts_covered = CHEST|GROIN|VITALS
+	color = "red"
 	icon_state = "carapacecuirass"
 	item_state = "carapacecuirass"
 	max_integrity = 175
@@ -251,14 +252,13 @@
 	smeltresult = /obj/item/ingot/steel
 	armor_class = ARMOR_CLASS_MEDIUM	
 
-/obj/item/clothing/suit/roguetown/armor/plate/bikini
+/obj/item/clothing/suit/roguetown/armor/plate/half/bikini
 	name = "plate bikini"
 	desc = "Half plate in bikini form, still just as protective somehow."
 	icon_state = "halfplatekini"
 	item_state = "halfplatekini"
 	allowed_sex = list(FEMALE)
 	anvilrepair = /datum/skill/craft/armorsmithing
-	armor_class = ARMOR_CLASS_MEDIUM
 
 /obj/item/clothing/suit/roguetown/armor/plate/full
 	name = "plate armor"

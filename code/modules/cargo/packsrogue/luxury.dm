@@ -87,6 +87,17 @@
 	name = "Riddle of Steel"
 	cost = 400
 	contains = list(/obj/item/riddleofsteel)
+
+/datum/supply_pack/rogue/luxury/lightr
+	name = "Port-A-Flame"
+	cost = 100
+	contains = list(/obj/item/lighter/paf)
+
+/datum/supply_pack/rogue/luxury/zigcase
+	name = "Regal Zig Case"
+	cost = 600
+	contains = list(/obj/item/storage/fancy/cigarettes/cigars/cohiba)
+
 // Flavor Packages - For region specific gear; mostly for flavor, also to buy and LARP I guess.
 // Yeah, it's weapons and armor and clothes but sue me. It's overpriced for the LARP.
 
@@ -129,14 +140,14 @@
 					/obj/item/ammopouch/bullets
 					)
 
-
+/*                                                                                             /// strikeout for now till wizard tower is up. there are too damn many people with magic running around.
 /datum/supply_pack/rogue/luxury/acrobat
 	name = "Fragment of the Acrobat"
 	cost = 200
 	contains = list(/obj/item/book/granter/trait/acrobat)
 /datum/supply_pack/rogue/luxury/swamp
 	name = "Fragment of the Swamp"
-	cost = 200
+	cost = 750
 	contains = list(/obj/item/book/granter/trait/mobility/bogtrek)
 /datum/supply_pack/rogue/luxury/kneestinger
 	name = "Fragment of Dendor"
@@ -144,24 +155,29 @@
 	contains = list(/obj/item/book/granter/trait/mobility/kneestinger)
 /datum/supply_pack/rogue/luxury/mediumarmor
 	name = "Fragment of the Old Guard"
-	cost = 50
+	cost = 200
 	contains = list(/obj/item/book/granter/trait/defense/mediumarmor)
-/datum/supply_pack/rogue/luxury/heavyarmor
+/*/datum/supply_pack/rogue/luxury/heavyarmor
 	name = "Fragment of the Forgotten Knight"
 	cost = 200
+	contains = list(/obj/item/book/granter/trait/defense/heavyarmor)
 	contains = list(/obj/item/book/granter/trait/defense/heavyarmor)
 /datum/supply_pack/rogue/luxury/succubus
 	name = "Fragment of the Succubus"
 	cost = 50
 	contains = list(/obj/item/book/granter/trait/succubus)
+/datum/supply_pack/rogue/luxury/north
+	name = "Fragment of the North"
+	cost = 200
+	contains = list(/obj/item/book/granter/trait/north)
 /datum/supply_pack/rogue/luxury/undying
 	name = "Fragment of the Undying"
 	cost = 500
 	contains = list(/obj/item/book/granter/trait/war/undying)
 /datum/supply_pack/rogue/luxury/relentless
 	name = "Fragment of the Relentless"
-	cost = 800
-	contains = list(/obj/item/book/granter/trait/war/relentless)
+	cost = 1000
+	contains = list(/obj/item/book/granter/trait/war/relentless) 
 
 
 
@@ -234,3 +250,24 @@
 	name = "Scroll of Mending"
 	cost = 50
 	contains = list(/obj/item/book/granter/spell/spells5e/mending5e)
+
+
+
+//p2
+/datum/supply_pack/rogue/luxury/mindsliver5e
+	name = "Scroll of Mind Sliver"
+	cost = 50
+	contains = list(/obj/item/book/granter/spell/spells5e/mindsliver5e)
+/datum/supply_pack/rogue/luxury/poisonspray5e
+	name = "Scroll of Poison Spray"
+	cost = 50
+	contains = list(/obj/item/book/granter/spell/spells5e/poisonspray5e)
+/datum/supply_pack/rogue/luxury/primalsavagery5e
+	name = "Scroll of Primal Savagery"
+	cost = 50
+	contains = list(/obj/item/book/granter/spell/spells5e/primalsavagery5e)
+/datum/supply_pack/rogue/luxury/mending5e
+	name = "Scroll of Ray of Frost"
+	cost = 50
+	contains = list(/obj/item/book/granter/spell/spells5e/rayoffrost5e)
+*/

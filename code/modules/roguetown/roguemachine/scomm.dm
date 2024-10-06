@@ -1,4 +1,5 @@
-
+// [GOONWOOD-EIDT]
+/*
 /obj/structure/roguemachine/scomm
 	name = "SCOM"
 	desc = "The Supernatural Communication Optical Machine is a wonder of magic and technology."
@@ -328,4 +329,5 @@
 	else
 		send_speech(message, 1, src, , spans, message_language=language)
 
-	return
+	return */
+// [GOONWOOD-EIDT]
