@@ -1,36 +1,3 @@
-//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
-"aaa" = (
-/obj/structure/stairs,
-/turf/open/floor/rogue/cobble,
-/area/rogue/under/town/basement)
-"aab" = (
-/turf/closed/wall/mineral/rogue/stonebrick,
-/area/rogue/under/cavewet/bogcaves)
-"aac" = (
-/obj/structure/flora/ausbushes/ppflowers,
-/obj/effect/landmark/start/druid,
-/turf/open/floor/rogue/grass,
-/area/rogue/indoors/town/church/chapel)
-"aad" = (
-/turf/closed/mineral/rogue,
-/area/rogue/under/cavewet)
-"aae" = (
-/turf/open/floor/rogue/dirt,
-/area/rogue/under/cavewet)
-"aaf" = (
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet)
-"aag" = (
-/turf/open/transparent/openspace,
-/area/rogue/under/cavewet)
-"aah" = (
-/obj/structure/chair/stool/rogue,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet)
-"aai" = (
-/obj/structure/fluff/traveltile/bandit{
-	aportalgoesto = "banditin";
-	aportalid = "banditexit"
 	},
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cavewet)
