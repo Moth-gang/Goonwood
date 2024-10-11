@@ -17926,10 +17926,6 @@
 	},
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/shelter/mountains)
-"lhR" = (
-/mob/living/simple_animal/hostile/rogue/dragger,
-/turf/open/floor/rogue/blocks,
-/area/rogue/under/cavewet/bogcaves/tomb/martyr)
 "lia" = (
 /obj/structure/stairs,
 /turf/open/floor/rogue/blocks,
@@ -129557,7 +129553,7 @@ uxg
 uxg
 uxg
 uxg
-lhR
+uxg
 uxg
 fzk
 uiN
@@ -129955,7 +129951,7 @@ whb
 whb
 fzk
 jza
-lhR
+uxg
 uxg
 uxg
 uxg
@@ -131164,7 +131160,7 @@ uxg
 uxg
 uxg
 uxg
-lhR
+uxg
 uxg
 uxg
 fzk
