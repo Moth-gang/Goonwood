@@ -946,6 +946,7 @@
 	desc = "A chestplate made using bone."
 	icon_state = "bonearmor"
 	item_state = "bonrearmor"
+	armor = list("blunt" = 50, "slash" = 25, "stab" = 20, "bullet" = 15, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0)
 	smeltresult = /obj/item/ash
 
 /obj/item/clothing/suit/roguetown/armor/leather/hide/bearfur
