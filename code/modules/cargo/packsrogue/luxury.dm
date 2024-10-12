@@ -146,7 +146,7 @@
 	name = "Fragment of the Old Guard"
 	cost = 200
 	contains = list(/obj/item/book/granter/trait/defense/mediumarmor)
-/*/datum/supply_pack/rogue/luxury/heavyarmor
+/datum/supply_pack/rogue/luxury/heavyarmor
 	name = "Fragment of the Forgotten Knight"
 	cost = 200
 	contains = list(/obj/item/book/granter/trait/defense/heavyarmor)
@@ -159,14 +159,14 @@
 	name = "Fragment of the North"
 	cost = 200
 	contains = list(/obj/item/book/granter/trait/north)
-/*/datum/supply_pack/rogue/luxury/undying
+/datum/supply_pack/rogue/luxury/undying
 	name = "Fragment of the Undying"
 	cost = 500
 	contains = list(/obj/item/book/granter/trait/war/undying)
-/datum/supply_pack/rogue/luxury/relentless
+/*/datum/supply_pack/rogue/luxury/relentless
 	name = "Fragment of the Relentless"
 	cost = 1000
-	contains = list(/obj/item/book/granter/trait/war/relentless) */
+	contains = list(/obj/item/book/granter/trait/war/relentless)*/
 
 
 
