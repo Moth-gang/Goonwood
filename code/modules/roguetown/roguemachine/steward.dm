@@ -1,5 +1,3 @@
-// GOONWOOD EDIT
-/*
 #define TAB_MAIN 1
 #define TAB_BANK 2
 #define TAB_STOCK 3
@@ -311,4 +309,3 @@
 #undef TAB_IMPORT
 #undef TAB_BOUNTIES
 #undef TAB_LOG
-*/
