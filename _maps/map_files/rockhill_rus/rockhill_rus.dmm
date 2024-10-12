@@ -2816,6 +2816,10 @@
 	dir = 8
 	},
 /area/rogue/indoors/town/manor)
+"bnY" = (
+/obj/structure/closet/crate/roguecloset/inn,
+/turf/open/floor/rogue/hexstone,
+/area/rogue/indoors/town/bath)
 "bnZ" = (
 /obj/item/roguebin/water/gross,
 /turf/open/floor/rogue/grass,
@@ -3367,7 +3371,7 @@
 /obj/structure/stairs{
 	dir = 1
 	},
-/turf/open/floor/rogue/blocks/stonered/tiny,
+/turf/open/floor/rogue/blocks/stonered,
 /area/rogue/indoors/town/bath)
 "bDH" = (
 /obj/machinery/light/rogue/firebowl/standing/blue,
@@ -5610,12 +5614,11 @@
 	},
 /area/rogue/indoors/town/dwarfin)
 "cZu" = (
-/obj/structure/table/wood{
-	dir = 9;
-	icon_state = "largetable"
+/obj/machinery/light/rogue/wallfire/candle/blue{
+	pixel_y = -32
 	},
-/obj/item/reagent_containers/glass/cup,
-/turf/open/floor/rogue/blocks/stonered/tiny,
+/obj/structure/fermenting_barrel/random/beer,
+/turf/open/floor/rogue/blocks/stonered,
 /area/rogue/indoors/town/bath)
 "dap" = (
 /obj/structure/closet/crate/chest,
@@ -6091,11 +6094,11 @@
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/tavern)
 "doY" = (
+/obj/item/reagent_containers/glass/cup/steel,
 /obj/structure/table/wood{
-	dir = 8;
+	dir = 9;
 	icon_state = "largetable"
 	},
-/obj/item/reagent_containers/glass/cup/steel,
 /turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/indoors/town/bath)
 "dpa" = (
@@ -6107,12 +6110,8 @@
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
 "dpw" = (
-/obj/structure/table/wood{
-	dir = 4;
-	icon_state = "largetable"
-	},
-/obj/item/reagent_containers/glass/cup,
-/turf/open/floor/rogue/blocks/stonered/tiny,
+/obj/machinery/light/rogue/firebowl/standing/blue,
+/turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/bath)
 "dpL" = (
 /obj/structure/flora/roguegrass/fungus_bush,
@@ -6256,7 +6255,6 @@
 	dir = 10;
 	icon_state = "largetable"
 	},
-/obj/item/reagent_containers/glass/cup,
 /turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/indoors/town/bath)
 "dvr" = (
@@ -6751,6 +6749,7 @@
 "dPp" = (
 /obj/structure/table/wood,
 /obj/item/candle/yellow,
+/obj/item/clothing/shoes/roguetown/anklets,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/bath)
 "dPs" = (
@@ -6867,9 +6866,10 @@
 /turf/open/floor/rogue/woodturned,
 /area/rogue/outdoors/town/roofs)
 "dSq" = (
-/turf/open/floor/rogue/tile{
-	icon_state = "greenstone"
+/obj/machinery/light/rogue/wallfire/candle/blue{
+	pixel_y = -32
 	},
+/turf/open/floor/carpet/red,
 /area/rogue/indoors/town/bath)
 "dSt" = (
 /obj/structure/flora/rock/pile/largejungle,
@@ -6886,9 +6886,7 @@
 	icon_state = "longtable"
 	},
 /obj/item/clothing/mask/cigarette/rollie/cannabis,
-/turf/open/floor/rogue/tile{
-	icon_state = "greenstone"
-	},
+/turf/open/floor/carpet/red,
 /area/rogue/indoors/town/bath)
 "dSS" = (
 /obj/structure/table/wood{
@@ -7162,9 +7160,7 @@
 	icon_state = "longtable"
 	},
 /obj/item/reagent_containers/glass/cup,
-/turf/open/floor/rogue/tile{
-	icon_state = "greenstone"
-	},
+/turf/open/floor/carpet/red,
 /area/rogue/indoors/town/bath)
 "ecm" = (
 /obj/machinery/light/rogue/wallfire/candle{
@@ -7261,6 +7257,9 @@
 /obj/item/reagent_containers/food/snacks/grown/rogue/sweetleafdry,
 /obj/item/reagent_containers/food/snacks/grown/rogue/sweetleafdry,
 /obj/item/reagent_containers/food/snacks/grown/rogue/sweetleafdry,
+/obj/machinery/light/rogue/wallfire/candle/blue{
+	pixel_y = -32
+	},
 /turf/open/floor/rogue/blocks/stonered,
 /area/rogue/indoors/town/bath)
 "edW" = (
@@ -7308,7 +7307,6 @@
 "eeM" = (
 /obj/structure/closet/crate/roguecloset,
 /obj/item/roguekey/nightmaiden,
-/obj/item/roguekey/tavern,
 /turf/open/floor/rogue/blocks/stonered,
 /area/rogue/indoors/town/bath)
 "eeO" = (
@@ -10738,6 +10736,13 @@
 /obj/structure/bars,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cavewet/bogcaves)
+"guw" = (
+/obj/item/clothing/suit/roguetown/shirt/dress/gen/strapless,
+/obj/item/clothing/suit/roguetown/shirt/dress/gen/strapless/black,
+/obj/item/clothing/suit/roguetown/shirt/dress/gen/strapless/blue,
+/obj/structure/closet/crate/roguecloset,
+/turf/open/floor/rogue/blocks/stonered,
+/area/rogue/indoors/town/bath)
 "guH" = (
 /obj/structure/toilet,
 /turf/open/floor/rogue/ruinedwood{
@@ -11744,6 +11749,13 @@
 	},
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/shelter/mountains)
+"hbI" = (
+/obj/item/clothing/suit/roguetown/shirt/dress/gen/strapless/purple,
+/obj/item/clothing/suit/roguetown/shirt/dress/gen/strapless/random,
+/obj/item/clothing/suit/roguetown/shirt/dress/gen/strapless/red,
+/obj/structure/closet/crate/roguecloset,
+/turf/open/floor/rogue/blocks/stonered,
+/area/rogue/indoors/town/bath)
 "hbJ" = (
 /obj/structure/table/wood{
 	icon_state = "tablewood1"
@@ -18335,6 +18347,15 @@
 "lqR" = (
 /turf/open/water/swamp,
 /area/rogue/outdoors/tribalfort)
+"lqZ" = (
+/obj/item/clothing/suit/roguetown/shirt/dress/gen/sexy/black,
+/obj/item/clothing/suit/roguetown/shirt/dress/gen/sexy/black,
+/obj/item/clothing/suit/roguetown/shirt/dress/gen/sexy,
+/obj/item/clothing/suit/roguetown/shirt/dress/gen/sexy,
+/obj/structure/closet/crate/roguecloset,
+/obj/machinery/light/rogue/wallfire/candle/blue,
+/turf/open/floor/rogue/blocks/stonered,
+/area/rogue/indoors/town/bath)
 "lrs" = (
 /turf/closed/mineral/rogue,
 /area/rogue/under/town/sewer)
@@ -105439,10 +105460,10 @@ bpD
 bpD
 bpD
 bpD
-aAs
-aAs
-aAs
-aAs
+bpD
+bpD
+bpD
+bpD
 aAs
 aAs
 aAs
@@ -105841,10 +105862,10 @@ bpD
 bpD
 bpD
 bpD
-aAs
-bDl
-clA
-clA
+bpD
+bpD
+bpD
+bpD
 aAs
 aAs
 aAs
@@ -106244,17 +106265,17 @@ bpD
 bpD
 bpD
 aAs
-bDl
-clA
-clA
+aAs
+aAs
+aAs
 bJd
-cRN
-cXq
+lqZ
+cCz
 djE
 cXq
 cCz
-aAs
-aAI
+cZu
+bJd
 bpD
 bpD
 bpD
@@ -106650,11 +106671,11 @@ bIk
 clA
 clA
 aAs
-cCz
-cZu
+guw
+clA
 doY
 dvj
-cCz
+clA
 edy
 aAI
 bpD
@@ -107048,16 +107069,16 @@ bpD
 bpD
 bpD
 aAs
-aAs
+bDl
 clA
 clA
 aAs
-cCz
+hbI
+clA
 dcf
-dpw
 dwK
 clA
-edy
+enW
 aAI
 bpD
 bpD
@@ -107447,20 +107468,20 @@ bpD
 aAs
 aAs
 aAs
-bbO
-bbO
-bCz
 aAs
+aAs
+aAs
+bDl
 clA
 clA
 bJd
 cRN
-dcz
+clA
 dcz
 dcz
 clA
 edI
-aAI
+bJd
 bpD
 bpD
 bpD
@@ -107849,9 +107870,9 @@ bpD
 aAI
 aMh
 aXR
-bgI
-bgI
-bgI
+bnY
+bnY
+aAs
 bJd
 clA
 clA
@@ -108655,7 +108676,7 @@ aNc
 aXR
 bqP
 bqP
-bqP
+dpw
 bJd
 clA
 clA
@@ -108665,7 +108686,7 @@ cCz
 cCz
 cCz
 cCz
-enW
+cCz
 aAI
 bpD
 bpD
@@ -109066,9 +109087,9 @@ aAs
 diF
 bJd
 dyD
+dzb
 dSq
-dSq
-aAI
+bJd
 bpD
 bpD
 bpD
@@ -109469,7 +109490,7 @@ aAs
 drd
 dzb
 dSQ
-dSq
+dzb
 aAI
 bpD
 bpD
@@ -109871,7 +109892,7 @@ aAs
 duO
 dzb
 ebR
-dSq
+dzb
 aAI
 bpD
 bpD
@@ -110272,9 +110293,9 @@ bJd
 aAs
 bJd
 dyD
+dzb
 dSq
-dSq
-aAI
+bJd
 bpD
 bpD
 bpD
@@ -112681,7 +112702,7 @@ csr
 clA
 cHE
 baS
-bJd
+baS
 baS
 dPO
 aAI
@@ -113887,7 +113908,7 @@ clA
 clA
 cHE
 baS
-bJd
+baS
 baS
 cHE
 aAI
