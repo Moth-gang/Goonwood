@@ -609,20 +609,20 @@
 	result = /obj/item/clothing/mask/rogue/skullmask
 	reqs = list(/obj/item/natural/bone = 3,
 				/obj/item/natural/fibers = 1)
-	sellprice = 10
+	sellprice = 8
 	verbage_simple = "craft"
 	verbage = "crafted"
-	craftdiff = 0
+	craftdiff = 1
 
 /datum/crafting_recipe/roguetown/tribalskull
 	name = "wendigo helmet"
 	result = /obj/item/clothing/head/roguetown/tribalskull
 	reqs = list(/obj/item/natural/bone = 3,
 				/obj/item/natural/fibers = 1)
-	sellprice = 10
+	sellprice = 8
 	verbage_simple = "craft"
 	verbage = "crafted"
-	craftdiff = 0
+	craftdiff = 1
 
 /datum/crafting_recipe/roguetown/skullcrotch
 	name = "skull belt"
@@ -632,27 +632,27 @@
 	sellprice = 4
 	verbage_simple = "craft"
 	verbage = "crafted"
-	craftdiff = 0	
+	craftdiff = 1	
 
 /datum/crafting_recipe/roguetown/bonearmor
 	name = "bone armor"
 	result = /obj/item/clothing/suit/roguetown/armor/carapace/bone
-	reqs = list(/obj/item/natural/bone = 3,
-				/obj/item/natural/fibers = 1)
-	sellprice = 1
+	reqs = list(/obj/item/natural/bone = 6,
+				/obj/item/natural/fibers = 2)
+	sellprice = 16
 	verbage_simple = "craft"
 	verbage = "crafted"
-	craftdiff = 0	
+	craftdiff = 2	
 
 /datum/crafting_recipe/roguetown/bonegreaves
 	name = "bone greaves"
 	result = /obj/item/clothing/shoes/roguetown/boots/bonegreaves
 	reqs = list(/obj/item/natural/bone = 2,
 				/obj/item/natural/fibers = 1)
-	sellprice = 1
+	sellprice = 6
 	verbage_simple = "craft"
 	verbage = "crafted"
-	craftdiff = 0	
+	craftdiff = 2	
 
 /datum/crafting_recipe/roguetown/antlerhood
 	name = "antlerhood"
@@ -687,10 +687,10 @@
 	result = /obj/item/clothing/neck/roguetown/psicross/skull
 	reqs = list(/obj/item/natural/bone = 1,
 				/obj/item/natural/fibers = 1)
-	sellprice = 1
+	sellprice = 4
 	verbage_simple = "craft"
 	verbage = "crafted"
-	craftdiff = 0		
+	craftdiff = 1		
 
 /datum/crafting_recipe/roguetown/banner
 	name = "battle standard"
