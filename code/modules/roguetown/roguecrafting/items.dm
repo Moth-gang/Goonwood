@@ -636,7 +636,7 @@
 
 /datum/crafting_recipe/roguetown/bonearmor
 	name = "bone armor"
-	result = /obj/item/clothing/suit/roguetown/armor/bone/chestplate
+	result = /obj/item/clothing/suit/roguetown/armor/carapace/bone
 	reqs = list(/obj/item/natural/bone = 3,
 				/obj/item/natural/fibers = 1)
 	sellprice = 1
