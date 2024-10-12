@@ -886,7 +886,7 @@
 	smeltresult = /obj/item/ingot/steel
 	armor_class = ARMOR_CLASS_HEAVY
 
-/obj/item/clothing/suit/roguetown/armor/leathervest
+/obj/item/clothing/suit/roguetown/armor/leather/vest/v2
 	name = "leather vest"
 	desc = "A simple vest made of leather, provides poor protection."
 	icon_state = "leathervest"
