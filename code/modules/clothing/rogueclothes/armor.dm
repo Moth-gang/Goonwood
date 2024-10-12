@@ -954,7 +954,7 @@
 	smeltresult = /obj/item/ash
 	equip_delay_self = 15
 
-/obj/item/clothing/suit/roguetown/armor/hide/bearfur
+/obj/item/clothing/suit/roguetown/armor/leather/hide/bearfur
 	name = "bear fur"
 	desc = "Thick and warm."
 	body_parts_covered = CHEST|VITALS
