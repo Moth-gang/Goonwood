@@ -27,7 +27,7 @@
 	shirt = /obj/item/clothing/suit/roguetown/shirt/tribalrag
 	pants = /obj/item/clothing/under/roguetown/loincloth/brown
 	belt = /obj/item/storage/belt/rogue/bone/skullbelt
-	armor = /obj/item/clothing/suit/roguetown/armor/bone/chestplate
+	armor = /obj/item/clothing/suit/roguetown/armor/carapace/bone
 	head = /obj/item/clothing/head/roguetown/tribalskull
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
 	shoes = /obj/item/clothing/shoes/roguetown/boots/bonegreaves
