@@ -945,7 +945,7 @@
 	smeltresult = /obj/item/ingot/gold
 	armor_class = ARMOR_CLASS_MEDIUM	
 
-/obj/item/clothing/suit/roguetown/armor/bone/chestplate
+/obj/item/clothing/suit/roguetown/armor/carapace/bone
 	name = "bone chestplate"
 	desc = "A chestplate made using bone."
 	body_parts_covered = CHEST
