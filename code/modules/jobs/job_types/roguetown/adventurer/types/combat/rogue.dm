@@ -13,16 +13,24 @@
 /datum/outfit/job/roguetown/adventurer/rogue/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.adjust_blindness(-3)
-	var/classes = list("Rogue","Duelist",)
-	//var/classes = list("Rogue","Duelist","Arcane Trickster","Phantom",)
+	var/classes = list(
+		"Thief",
+		"Swashbuckler",
+		"Assassin",
+		//"Phantom",
+		//"Arcane Trickster",
+		)
 	var/classchoice = input("Choose your archetypes", "Available archetypes") as anything in classes
 	switch(classchoice)
-		if("Rogue")
+		if("Thief")
 			H.set_blindness(0)
 			roguearch(H)
-		if("Duelist")
+		if("Swashbuckler")
 			H.set_blindness(0)
-			duelistarch(H)
+			swashbucklerarch(H)
+		if("Assassin")
+			H.set_blindness(0)
+			assassinarch(H)
 		/*if("Arcane Trickster")
 			H.set_blindness(0)
 			tricksterarch(H)
@@ -38,7 +46,7 @@
 	H.mind.adjust_skillrank(/datum/skill/combat/crossbows, pick(3,3,4), TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/knives, 4, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/maces, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/swimming, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/climbing, pick(5,6), TRUE)
@@ -70,45 +78,92 @@
 	H.change_stat("intelligence", 2)
 
 // Less thief-ish skills, but you have better starting skills and no strength penalty. Plus, shield skill and a parry dagger.
-/datum/outfit/job/roguetown/adventurer/rogue/proc/duelistarch(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/adventurer/rogue/proc/swashbucklerarch(mob/living/carbon/human/H)
 	H.mind.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/shields, 2, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/crossbows, pick(1,2), TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/knives, 4, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/swimming, 3, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/misc/climbing, 4, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/misc/climbing, pick(5,6), TRUE)
 	H.mind.adjust_skillrank(/datum/skill/craft/crafting, 1, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/misc/medicine, pick(0,1), TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 3, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/misc/riding, 2, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/misc/stealing, 3, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/misc/riding, pick(1,2), TRUE)
+	H.mind.adjust_skillrank(/datum/skill/craft/engineering, 1, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/lockpicking, 2, TRUE)
-	shoes = /obj/item/clothing/shoes/roguetown/shortboots
-	neck = /obj/item/storage/belt/rogue/pouch/coins/poor
-	head = /obj/item/clothing/head/roguetown/bardhat
+	//head = /obj/item/clothing/head/roguetown/helmet/tricorn
+	shoes = /obj/item/clothing/shoes/roguetown/boots
 	pants = /obj/item/clothing/under/roguetown/trou/leather
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
-	gloves = /obj/item/clothing/gloves/roguetown/angle
+	gloves = /obj/item/clothing/gloves/roguetown/leather/black
+	backpack_contents = list(/obj/item/lockpickring/mundane)
+	if(prob(15))
+		gloves = /obj/item/clothing/gloves/roguetown/angle
 	belt = /obj/item/storage/belt/rogue/leather
-	armor = /obj/item/clothing/suit/roguetown/armor/leather/hide
-	cloak = /obj/item/clothing/cloak/half
+	armor = /obj/item/clothing/suit/roguetown/armor/leather
+	cloak = /obj/item/clothing/cloak/raincloak/mortus
 	backl = /obj/item/storage/backpack/rogue/satchel
-	beltl = /obj/item/rogueweapon/sword/rapier
-	beltr = /obj/item/rogueweapon/shield/buckler
-	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel/parrying)
+	beltr = /obj/item/rogueweapon/sword/iron
+	beltl = /obj/item/storage/belt/rogue/pouch/coins/	
+	H.change_stat("endurance", 1)
+	H.change_stat("speed", 3)
+	H.change_stat("intelligence", 2)
+	H.cmode_music = 'sound/music/combat_duelist.ogg'
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_DECEIVING_MEEKNESS, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_NUTCRACKER, TRAIT_GENERIC) //extra damage to groin (dirty fighting)
-	H.change_stat("strength", 1)
-	H.change_stat("speed", 2)
+	H.visible_message(span_info("I trained as a swashbuckler. I have some dirty tricks under my cape."))
+
+//skilled in taking out single targets with intrigue
+/datum/outfit/job/roguetown/adventurer/rogue/proc/assassinarch(mob/living/carbon/human/H)
+	H.mind.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/knives, 4, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/misc/climbing, pick(5,6), TRUE)
+	H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/misc/medicine, pick(0,1), TRUE)
+	H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 5, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/misc/stealing, 4, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/craft/engineering, 2, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/misc/lockpicking, 3, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/misc/tracking, 4, TRUE) //Hearthstone change.
+	H.mind.adjust_skillrank(/datum/skill/misc/alchemy, 3, TRUE)
+
+	shoes = /obj/item/clothing/shoes/roguetown/boots/hidden/poison
+	pants = /obj/item/clothing/under/roguetown/trou/leather
+	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
+	gloves = /obj/item/clothing/gloves/roguetown/angle
+	belt = /obj/item/storage/belt/rogue/leather
+	armor = /obj/item/clothing/suit/roguetown/armor/leather
+	wrists = /obj/item/clothing/wrists/roguetown/hiddenblade
+	cloak = /obj/item/clothing/cloak/raincloak/mortus
+	backl = /obj/item/storage/backpack/rogue/satchel
+	backr = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
+	beltl = /obj/item/quiver/Pbolts
+	backpack_contents = list(/obj/item/bomb, /obj/item/paper/assassin)
+	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_DECEIVING_MEEKNESS, TRAIT_GENERIC)
+	H.change_stat("strength", -1)
+	H.change_stat("perception", 2)
+	H.change_stat("speed", pick(3,4))
 	H.change_stat("intelligence", 2)
-	H.visible_message(span_info("I trained as a swashbuckler, flair and precision is my weapon... And some dirty tricks under my cape. I can fool people into underestimating me, their last mistake."))
+	
+	//someone who is a writer can do this. I can't think of anything
+	//H.visible_message(span_info("I am a trained assassin from the local assassins' guild,  hidden from most."))
+
+/obj/item/paper/assassin
+	info = "Assassin,<br><br>You have been equipped with the standard hidden wrist blade bracers to complete your missions. A small vial of poison is hidden in your boot that you may take your own life if captured.<br><br>Destroy this parchment at your earliest convenience.<br><br>-The Guild"
+
 /*
 // Arcane Trickster - A charlatan, magic using rogue (based on arcane trickster archetype from 5e)
 /datum/outfit/job/roguetown/adventurer/rogue/proc/tricksterarch(mob/living/carbon/human/H)
