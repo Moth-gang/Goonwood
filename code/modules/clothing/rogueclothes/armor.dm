@@ -893,7 +893,7 @@
 	item_state = "leathervest"
 	allowed_race = CLOTHED_RACES_TYPES
 
-/obj/item/clothing/suit/roguetown/armor/valorianarmor
+/obj/item/clothing/suit/roguetown/armor/gambeson/valorianarmor
 	name = "valorian armor"
 	desc = "Valorian armor made using heavy cloth."
 	icon_state = "valorian_armor"
