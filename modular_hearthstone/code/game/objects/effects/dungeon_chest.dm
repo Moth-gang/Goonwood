@@ -166,7 +166,7 @@
 		/obj/item/clothing/suit/roguetown/armor/leather/hide/bikini = 45,
 		/obj/item/clothing/suit/roguetown/armor/leather/vest= 55,
 		/obj/item/clothing/suit/roguetown/armor/leather/hide/bearfur = 30,
-		/obj/item/clothing/suit/roguetown/armor/bone/chestplate = 40,
+		/obj/item/clothing/suit/roguetown/armor/carapace/bone = 40,
 
 		//helmet
 		/obj/item/clothing/head/roguetown/helmet/kettle = 10,
