@@ -84,7 +84,7 @@
 			neck = /obj/item/clothing/neck/roguetown/psicross/malum
 			pants = /obj/item/clothing/under/roguetown/trou/leather
 			shoes = /obj/item/clothing/shoes/roguetown/boots
-			armor =	/obj/item/clothing/suit/roguetown/armor/leathervest
+			armor =	/obj/item/clothing/suit/roguetown/armor/leather/vest/v2
 			H.mind.adjust_skillrank(/datum/skill/craft/weaponsmithing, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/craft/armorsmithing, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/craft/smelting, 2, TRUE)
