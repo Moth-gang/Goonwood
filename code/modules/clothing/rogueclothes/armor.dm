@@ -944,16 +944,13 @@
 /obj/item/clothing/suit/roguetown/armor/carapace/bone
 	name = "bone chestplate"
 	desc = "A chestplate made using bone."
-	body_parts_covered = CHEST
 	icon_state = "bonearmor"
 	item_state = "bonrearmor"
 	smeltresult = /obj/item/ash
-	equip_delay_self = 15
 
 /obj/item/clothing/suit/roguetown/armor/leather/hide/bearfur
 	name = "bear fur"
 	desc = "Thick and warm."
-	body_parts_covered = CHEST|VITALS
 	icon_state = "bearfur"
 	item_state = "bearfur"
 	smeltresult = /obj/item/ash
