@@ -283,16 +283,12 @@
 	smeltresult = /obj/item/ingot/iron
 	armor_class = ARMOR_CLASS_MEDIUM
 
-/obj/item/clothing/suit/roguetown/armor/shortbrigandine
+/obj/item/clothing/suit/roguetown/armor/plate/half/iron/shortbrigandine
 	name = "fancy brigandine"
 	desc = "A coat with plates concealed inside an exterior fabric. This one is a bit nicer looking than most others and the fabric on the exterior of the armor better conceals the plate beneath."
-	body_parts_covered = CHEST|VITALS
 	icon_state = "oa_short"
 	item_state = "oa_short"
 	boobed = TRUE
-	max_integrity = 200
-	smeltresult = /obj/item/ingot/iron
-	armor_class = ARMOR_CLASS_MEDIUM
 
 /obj/item/clothing/suit/roguetown/armor/plate/half/ironharness
 	name = "iron harness"
