@@ -36662,12 +36662,6 @@
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/outdoors/town)
-"xdE" = (
-/obj/structure/stairs{
-	dir = 1
-	},
-/turf/closed,
-/area/rogue/indoors/town/tavern)
 "xdZ" = (
 /obj/effect/landmark/start/royalguard{
 	dir = 4
@@ -37899,7 +37893,7 @@
 /obj/structure/stairs{
 	dir = 1
 	},
-/turf/closed,
+/turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/tavern)
 "xMr" = (
 /turf/closed/wall/mineral/rogue/decowood,
@@ -211288,7 +211282,7 @@ hNF
 dVr
 yfk
 hQe
-xdE
+iqY
 xMq
 tYm
 txa
