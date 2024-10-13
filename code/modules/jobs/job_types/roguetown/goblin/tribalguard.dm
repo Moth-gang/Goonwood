@@ -19,7 +19,7 @@
 	head = /obj/item/clothing/head/roguetown/helmet/leather/volfhead
 	shoes = /obj/item/clothing/shoes/roguetown/boots/bonegreaves
 	shirt = /obj/item/clothing/suit/roguetown/shirt/tribalrag
-	armor = /obj/item/clothing/suit/roguetown/armor/bone/chestplate
+	armor = /obj/item/clothing/suit/roguetown/armor/carapace/bone
 	pants = /obj/item/clothing/under/roguetown/loincloth/brown
 	neck = /obj/item/clothing/neck/roguetown/psicross/talisman
 	belt = /obj/item/storage/belt/rogue/bone/skullbelt

@@ -283,16 +283,12 @@
 	smeltresult = /obj/item/ingot/iron
 	armor_class = ARMOR_CLASS_MEDIUM
 
-/obj/item/clothing/suit/roguetown/armor/shortbrigandine
+/obj/item/clothing/suit/roguetown/armor/plate/half/iron/shortbrigandine
 	name = "fancy brigandine"
 	desc = "A coat with plates concealed inside an exterior fabric. This one is a bit nicer looking than most others and the fabric on the exterior of the armor better conceals the plate beneath."
-	body_parts_covered = CHEST|VITALS
 	icon_state = "oa_short"
 	item_state = "oa_short"
 	boobed = TRUE
-	max_integrity = 200
-	smeltresult = /obj/item/ingot/iron
-	armor_class = ARMOR_CLASS_MEDIUM
 
 /obj/item/clothing/suit/roguetown/armor/plate/half/ironharness
 	name = "iron harness"
@@ -890,14 +886,14 @@
 	smeltresult = /obj/item/ingot/steel
 	armor_class = ARMOR_CLASS_HEAVY
 
-/obj/item/clothing/suit/roguetown/armor/leathervest
+/obj/item/clothing/suit/roguetown/armor/leather/vest/v2
 	name = "leather vest"
 	desc = "A simple vest made of leather, provides poor protection."
 	icon_state = "leathervest"
 	item_state = "leathervest"
 	allowed_race = CLOTHED_RACES_TYPES
 
-/obj/item/clothing/suit/roguetown/armor/valorianarmor
+/obj/item/clothing/suit/roguetown/armor/gambeson/valorianarmor
 	name = "valorian armor"
 	desc = "Valorian armor made using heavy cloth."
 	icon_state = "valorian_armor"
@@ -945,19 +941,17 @@
 	smeltresult = /obj/item/ingot/gold
 	armor_class = ARMOR_CLASS_MEDIUM	
 
-/obj/item/clothing/suit/roguetown/armor/bone/chestplate
+/obj/item/clothing/suit/roguetown/armor/carapace/bone
 	name = "bone chestplate"
 	desc = "A chestplate made using bone."
-	body_parts_covered = CHEST
 	icon_state = "bonearmor"
 	item_state = "bonrearmor"
+	armor = list("blunt" = 50, "slash" = 25, "stab" = 20, "bullet" = 15, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0)
 	smeltresult = /obj/item/ash
-	equip_delay_self = 15
 
-/obj/item/clothing/suit/roguetown/armor/hide/bearfur
+/obj/item/clothing/suit/roguetown/armor/leather/hide/bearfur
 	name = "bear fur"
 	desc = "Thick and warm."
-	body_parts_covered = CHEST|VITALS
 	icon_state = "bearfur"
 	item_state = "bearfur"
 	smeltresult = /obj/item/ash

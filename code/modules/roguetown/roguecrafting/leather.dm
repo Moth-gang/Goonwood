@@ -140,9 +140,9 @@
 
 /datum/crafting_recipe/roguetown/leather/leathervest
 	name = "leather vest"
-	result = /obj/item/clothing/suit/roguetown/armor/leathervest
+	result = /obj/item/clothing/suit/roguetown/armor/leather/vest/v2
 	reqs = list(/obj/item/natural/hide = 2)
-	sellprice = 26
+	sellprice = 16
 
 /datum/crafting_recipe/roguetown/leather/bikini
 	name = "leather bikini armor"
@@ -160,7 +160,7 @@
 
 /datum/crafting_recipe/roguetown/leather/bearfur
 	name = "bear fur"
-	result = /obj/item/clothing/suit/roguetown/armor/hide/bearfur
+	result = /obj/item/clothing/suit/roguetown/armor/leather/hide/bearfur
 	reqs = list(/obj/item/natural/hide = 1,
 				/obj/item/natural/fur = 2)
 	sellprice = 26

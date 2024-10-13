@@ -45,9 +45,10 @@
 	i_type = "Armor"		
 
 /datum/anvil_recipe/armor/shortbrigandine
-	name = "Short Brigandine"
+	name = "Short Brigandine (+1 Cloth)"
 	req_bar = /obj/item/ingot/iron
-	created_item = /obj/item/clothing/suit/roguetown/armor/shortbrigandine
+	additional_items = list(/obj/item/natural/cloth)
+	created_item = /obj/item/clothing/suit/roguetown/armor/plate/half/iron/shortbrigandine
 	craftdiff = 2
 	i_type = "Armor"		
 

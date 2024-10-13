@@ -431,7 +431,7 @@
 
 /datum/crafting_recipe/roguetown/sewing/valorianarmor
 	name = "valorian armor"
-	result = /obj/item/clothing/suit/roguetown/armor/valorianarmor
+	result = /obj/item/clothing/suit/roguetown/armor/gambeson/valorianarmor
 	reqs = list(/obj/item/natural/cloth = 4,
 				/obj/item/natural/fibers = 1)
 	tools = list(/obj/item/needle)
