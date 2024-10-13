@@ -139,7 +139,7 @@
 	craftdiff = 1	//Slightly harder craft.
 
 /datum/crafting_recipe/roguetown/leather/leathervest
-	name = "leather vest (other style)"
+	name = "leather vest"
 	result = /obj/item/clothing/suit/roguetown/armor/leather/vest/v2
 	reqs = list(/obj/item/natural/hide = 2)
 	sellprice = 16
