@@ -1268,6 +1268,16 @@
 	resistance_flags = FIRE_PROOF
 	anvilrepair = /datum/skill/craft/armorsmithing
 
+/obj/item/clothing/head/roguetown/nylev
+	name = "jewel of wealth"
+	icon_state = "vamp"
+	body_parts_covered = null
+	slot_flags = ITEM_SLOT_HEAD
+	dynamic_hair_suffix = null
+	sellprice = 1000
+	resistance_flags = FIRE_PROOF
+	anvilrepair = /datum/skill/craft/armorsmithing
+
 /obj/item/clothing/head/roguetown/grenzelhofthat
 	name = "grenzelhoft plume hat"
 	desc = "Slaying monsters or fair maidens: Grenzelhoft stands."

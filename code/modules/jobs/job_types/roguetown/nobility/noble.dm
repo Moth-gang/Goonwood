@@ -1,3 +1,4 @@
+/* // GOONWOODEDIT
 /datum/job/roguetown/noble
 	title = "Noble Guest"
 	flag = KNIGHT
@@ -80,3 +81,4 @@
 
 
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
+*/
