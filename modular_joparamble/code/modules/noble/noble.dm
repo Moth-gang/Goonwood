@@ -16,7 +16,7 @@
 	whitelist_req = TRUE
 	outfit = /datum/outfit/job/roguetown/noble
 	give_bank_account = 100
-	min_pq = 3
+	min_pq = 0
 	max_pq = null
 
 	advclass_cat_rolls = list(CTAG_NOBLE = 20)
@@ -66,7 +66,7 @@
 	pants = /obj/item/clothing/under/roguetown/tights/stockings/silk/random
 	backr = /obj/item/storage/backpack/rogue/satchel
 	if(H.mind)
-		H.mind.adjust_skillrank(/datum/skill/combat/bows, pick(0,1,) TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/bows, pick(0,1,), TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, pick(0,1), TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
@@ -86,7 +86,7 @@
 	name = "Благородный рыцарь"
 	tutorial = "С самых ранних лет вам не находилось лучше дела, чем практики с разным оружием и ношении доспехов, а так же верховая езда. Множество наставников вам помогало обрести нужны рыцарский опыт. Благодаря этому вы стали достойным противником в любом бою."
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
-	outfit = /datum/outfit/job/roguetown/noble/kinght
+	outfit = /datum/outfit/job/roguetown/noble/knight
 	category_tags = list(CTAG_NOBLE)
 
 /datum/outfit/job/roguetown/noble/knight/pre_equip(mob/living/carbon/human/H)
@@ -107,12 +107,12 @@
 	backr = /obj/item/storage/backpack/rogue/satchel
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail
 	cloak = /obj/item/clothing/cloak/half
-    head = /obj/item/clothing/head/roguetown/helmet/heavy/knight
+	head = /obj/item/clothing/head/roguetown/helmet/heavy
 	gloves = /obj/item/clothing/gloves/roguetown/plate
-    wrists = /obj/item/clothing/wrists/roguetown/bracers
+	wrists = /obj/item/clothing/wrists/roguetown/bracers
 	if(prob(50))
 		backl = /obj/item/rogueweapon/sword/long
-	else
+	else if(prob(33))
 		backl = /obj/item/rogueweapon/sword/rapier
 	else
 		backl = /obj/item/rogueweapon/flail/sflail
@@ -216,8 +216,9 @@
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/rich
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
 	head = /obj/item/clothing/head/roguetown/nylev
+	neck = /obj/item/storage/belt/rogue/pouch/coins/rich
 	shoes = /obj/item/clothing/shoes/roguetown/nobleboot
-	armor = /obj/item/clothing/suit/roguetown/armor/leather/vest/hand
+	armor = /obj/item/clothing/suit/roguetown/armor/leather/vest/black
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/guard
 	pants = /obj/item/clothing/under/roguetown/tights/black
 	backr = /obj/item/storage/backpack/rogue/satchel
@@ -287,8 +288,8 @@
 
 /datum/outfit/job/roguetown/noble/norm/pre_equip(mob/living/carbon/human/H)
 	..()
-		ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
-		ADD_TRAIT(H, TRAIT_SEEPRICES_SHITTY, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_SEEPRICES_SHITTY, TRAIT_GENERIC)
 	if(H.gender == MALE)
 		head = /obj/item/clothing/head/roguetown/fancyhat
 		pants = /obj/item/clothing/under/roguetown/tights
@@ -317,7 +318,7 @@
 			cloak = /obj/item/clothing/cloak/half
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/swords, pick(2,2,3) TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/swords, pick(2,2,3), TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
