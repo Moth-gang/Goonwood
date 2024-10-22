@@ -6,6 +6,7 @@
 #include "_DEFINES\preferences.dm"
 #include "modules\roguemachine\steward.dm"
 #include "modules\noble\noble.dm"
+#include "modules\whitelist\whitelist.dm"
 #endif
 // BEGIN_INTERNALS
 // END_INTERNALS
