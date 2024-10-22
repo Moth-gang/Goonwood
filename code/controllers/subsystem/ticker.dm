@@ -257,33 +257,71 @@ SUBSYSTEM_DEF(ticker)
 	var/last_bot_update = 0
 
 /datum/controller/subsystem/ticker/proc/checkreqroles()
-	var/list/readied_jobs = list()
-	var/list/required_jobs = list()
-
-	//var/list/required_jobs = list("Queen","King","Merchant") //JTGSZ - 4/11/2024 - This was the prev set of required jobs to go with the hardcoded checks commented out below
-
-	for(var/V in required_jobs)
-		for(var/mob/dead/new_player/player in GLOB.player_list)
-			if(!player)
-				continue
-			if(player.client.prefs.job_preferences[V] == JP_HIGH)
-				if(player.ready == PLAYER_READY_TO_PLAY)
-					if(player.client.prefs.lastclass == V)
-						if(player.IsJobUnavailable(V) != JOB_AVAILABLE)
-							to_chat(player, span_warning("You cannot be [V] and thus are not considered."))
-							continue
-				readied_jobs.Add(V)
-		/*
-			// These else conditions stop the round from starting unless there is a merchant, king, and queen.
-		else
-			var/list/stuffy = list("Set a Ruler to 'high' in your class preferences to start the game!", "PLAY Ruler NOW!", "A Ruler is required to start.", "Pray for a Ruler.", "One day, there will be a Ruler.", "Just try playing Ruler.", "If you don't play Ruler, the game will never start.", "We need at least one Ruler to start the game.", "We're waiting for you to pick Ruler to start.", "Still no Ruler is readied..", "I'm going to lose my mind if we don't get a Ruler readied up.","No. The game will not start because there is no Ruler.","What's the point of ROGUETOWN without a Ruler?")
-			to_chat(world, span_purple("[pick(stuffy)]"))
-			return FALSE
-	else
-		var/list/stuffy = list("Set Merchant to 'high' in your class preferences to start the game!", "PLAY Merchant NOW!", "A Merchant is required to start.", "Pray for a Merchant.", "One day, there will be a Merchant.", "Just try playing Merchant.", "If you don't play Merchant, the game will never start.", "We need at least one Merchant to start the game.", "We're waiting for you to pick Merchant to start.", "Still no Merchant is readied..", "I'm going to lose my mind if we don't get a Merchant readied up.","No. The game will not start because there is no Merchant.","What's the point of ROGUETOWN without a Merchant?")
-		to_chat(world, span_purple("[pick(stuffy)]"))
-		return FALSE
+	//goonwood edits to ticker to make ruler a required role
+	if(start_immediately == TRUE)
+		return TRUE
+	var/ruler = FALSE
+	//don't need those... for now.
+	/*
+	var/merchant = FALSE
+	var/priest = FALSE
 	*/
+	var/jobs_required = "Монарх" // this is for final message only. This doesn't do anything on it's own
+
+	var/players = GLOB.player_list.len
+
+	for(var/i in GLOB.new_player_list)
+		var/mob/dead/new_player/player = i
+		if(!player || !(player.ready))
+			continue
+		for(var/j)
+		if((player.client.prefs.job_preferences["King"] == JP_HIGH) || (player.client.prefs.job_preferences["Queen"] == JP_HIGH))
+			ruler = TRUE
+		/*Future proofing. Sort of.
+		if(player.mind.assigned_role == "Merchant")
+			merchant = TRUE
+		if((player.mind.assigned_role == "Priest") || (player.mind.assigned_role == "Priestess"))
+			ruler = TRUE
+		*/
+		if(ruler)
+			return TRUE
+
+#ifdef DEPLOY_TEST
+	ruler = TRUE
+	//merchant = TRUE
+	//priest = TRUE
+#endif
+#ifdef ROGUEWORLD
+	ruler = TRUE
+	//merchant = TRUE
+	//priest = TRUE
+#endif
+
+	if(players<10)
+		var/list/stuffy = list("Зизо проклинает вас на жизнь в этом пустом мире.","вы будете жить в мире собственных ошибок.","вы остаетесь подумать, зачем вы в этом пустом мире.","вы отпускаетесь вместе со своим одиночеством.","вы отправляетесь вместе со своим одиночеством в свободное плавание.")
+		to_chat(world,"<span class='notice'>Правитель требуется для начала раунда... однако так как в мире всего [players] душ, [pick(stuffy)]</span>")
+	else
+		if(!ruler)
+			var/list/stuffy = list(
+				"Поставь [jobs_required]а, на 'хай' в своем преференсе, чтобы партия могла начаться!",
+				"ПОИГРАЙ ЗА [jobs_required]а СЕЙЧАС ЖЕ!", 
+				"[jobs_required] требуется для начала партии.",
+				"Молись на [jobs_required]а.",
+				"Однажды, избранный [jobs_required] появится.", 
+				"Просто ПОПРОБУЙ поиграть на [jobs_required]а.",
+				"Если ты не захочешь играть за [jobs_required]а, то партия просто не начнется.",
+				"Нам нужен хотя бы один [jobs_required] для начала партии.", 
+				"Мы все ждем пока ТЫ выберешь [jobs_required]а для старта партии.", 
+				"И все так же нет [jobs_required]а...", 
+				"Я сейчас сойду с ума, если [jobs_required] не появится среди готовых персонажей!",
+				"Нет. Игра просто не начнется, просто потому что никто не хочет быть [jobs_required]ом.",
+				"Партия не начнется, пока у ДМа не будет листа [jobs_required]а.",
+				"Какой вообще смысл приключения, если нет [jobs_required]а?!", 
+			)
+			to_chat(world, "<span class='notice'>[pick(stuffy)]</span>")
+			return FALSE
+
+	//goonwood edits end
 
 	/*
 		This prevents any gamemode from starting unless theres at least 2 players ready, but the comments say 20 or it defaults into a deathmatch mode.
