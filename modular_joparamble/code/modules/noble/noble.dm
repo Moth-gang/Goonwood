@@ -263,6 +263,7 @@
 	beltl = /obj/item/storage/keyring/nobleguest
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
 	backr = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/rogueweapon/sword/rapier
 	if(prob(50))
 		cloak = /obj/item/clothing/cloak/cape/knight
 	else
