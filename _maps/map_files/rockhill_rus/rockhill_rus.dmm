@@ -3595,15 +3595,10 @@
 /turf/open/water/cleanshallow,
 /area/rogue/outdoors/beach)
 "bIt" = (
-/obj/structure/table/wood{
-	icon_state = "longtable"
-	},
-/obj/machinery/light/rogue/wallfire/candle,
-/obj/item/clothing/head/peaceflower{
-	pixel_x = 3;
-	pixel_y = 12
-	},
-/turf/open/floor/rogue/cobble,
+/obj/structure/closet/crate/roguecloset,
+/obj/item/candle/yellow,
+/obj/item/clothing/neck/roguetown/collar/feldcollar,
+/turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town)
 "bIu" = (
 /turf/open/floor/rogue/cobble,
@@ -5557,6 +5552,23 @@
 	muddy = true
 	},
 /area/rogue/outdoors/bog)
+"cUu" = (
+/obj/structure/table/wood{
+	dir = 1;
+	icon_state = "longtable_mid"
+	},
+/obj/item/burial_shroud{
+	pixel_x = -14;
+	pixel_y = 12
+	},
+/obj/item/rogueweapon/huntingknife/idagger/silver{
+	pixel_x = -6;
+	pixel_y = 5
+	},
+/obj/structure/fluff/walldeco/bigpainting,
+/obj/item/clothing/mask/cigarette/rollie/cannabis,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/town)
 "cUy" = (
 /turf/closed/wall/mineral/rogue/decostone/end{
 	dir = 8
@@ -11729,6 +11741,7 @@
 /area/rogue/under/town/basement)
 "gSH" = (
 /obj/structure/table/wood,
+/obj/item/clothing/neck/roguetown/collar/feldcollar,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town)
 "gSP" = (
@@ -19289,6 +19302,7 @@
 "lJO" = (
 /obj/structure/closet/crate/roguecloset,
 /obj/item/candle/yellow,
+/obj/item/clothing/neck/roguetown/collar/surgcollar,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town)
 "lJX" = (
@@ -19657,12 +19671,9 @@
 	},
 /area/rogue/indoors)
 "lZp" = (
-/obj/structure/table/wood{
-	dir = 1;
-	icon_state = "longtable_mid"
-	},
-/obj/structure/fluff/walldeco/bigpainting/lake,
-/turf/open/floor/rogue/cobble,
+/obj/structure/table/wood,
+/obj/item/clothing/neck/roguetown/collar/surgcollar,
+/turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town)
 "mab" = (
 /obj/machinery/light/rogue/torchholder/c,
@@ -26828,13 +26839,10 @@
 	},
 /area/rogue/indoors/town/manor)
 "qGY" = (
-/obj/structure/table/wood{
-	dir = 1;
-	icon_state = "longtable"
+/obj/item/rogueweapon/pick,
+/turf/open/floor/rogue/ruinedwood{
+	icon_state = "weird1"
 	},
-/obj/machinery/light/rogue/wallfire/candle,
-/obj/item/clothing/mask/cigarette/rollie/cannabis,
-/turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town)
 "qHc" = (
 /obj/structure/fluff/walldeco/rpainting,
@@ -32227,6 +32235,7 @@
 "ukI" = (
 /obj/machinery/light/rogue/chand,
 /obj/structure/fluff/walldeco/customflag,
+/obj/item/clothing/suit/roguetown/shirt/dress/silkdress/random,
 /turf/open/transparent/openspace,
 /area/rogue/indoors/town/manor)
 "ukU" = (
@@ -321362,7 +321371,7 @@ wbg
 wbg
 wbg
 xMr
-bIt
+pTM
 bmi
 bmi
 bmi
@@ -321764,7 +321773,7 @@ wbg
 wbg
 wbg
 xMr
-lZp
+rDh
 bmi
 bmi
 bmi
@@ -422672,10 +422681,10 @@ lkM
 reO
 reO
 xMr
-lJO
+bIt
 wvE
 bZh
-gSH
+lZp
 xMr
 fZJ
 fZJ
@@ -424275,8 +424284,8 @@ fZJ
 fZJ
 fZJ
 xMr
-rDh
-bmi
+cUu
+qGY
 bmi
 bmi
 ggk
@@ -424677,7 +424686,7 @@ fZJ
 fZJ
 fZJ
 xMr
-qGY
+gRj
 bmi
 bmi
 bmi
@@ -427086,10 +427095,10 @@ fZJ
 fZJ
 fZJ
 xMr
-lJO
+bIt
 wvE
 bZh
-gSH
+lZp
 xMr
 bmi
 bmi
