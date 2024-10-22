@@ -215,25 +215,26 @@
 	wrists = /obj/item/storage/keyring/nobleguest
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/rich
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
-	head = /obj/item/clothing/head/roguetown/nylev
-	neck = /obj/item/storage/belt/rogue/pouch/coins/rich
+	head = /obj/item/clothing/head/roguetown/nightman
+	neck = /obj/item/clothing/neck/roguetown/collar/surgcollar
 	shoes = /obj/item/clothing/shoes/roguetown/nobleboot
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/vest/black
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/guard
 	pants = /obj/item/clothing/under/roguetown/tights/black
 	backr = /obj/item/storage/backpack/rogue/satchel
 	cloak = /obj/item/clothing/cloak/half
+	id = /obj/item/scomstone
 	if(H.mind)
-		H.mind.adjust_skillrank(/datum/skill/combat/swords, pick(3,4,4), TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/swords, pick(2,3,3), TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/stealing, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/maces, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 5, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/labor/mathematics, 5, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/craft/cooking, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/riding, 3, TRUE)
 	H.change_stat("intelligence", 3)
 	H.change_stat("perception", 3)
@@ -252,6 +253,7 @@
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_SEEPRICES, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 
 	head = /obj/item/clothing/head/roguetown/fancyhat
 	pants = /obj/item/clothing/under/roguetown/tights
