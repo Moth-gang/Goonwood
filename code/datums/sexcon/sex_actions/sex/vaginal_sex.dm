@@ -1,4 +1,4 @@
-/datum/sex_action/vaginal_sex
+/*/datum/sex_action/vaginal_sex
 	name = "Fuck their cunt"
 	stamina_cost = 1.0
 
@@ -87,3 +87,4 @@
 	if(user.sexcon.finished_check())
 		return TRUE
 	return FALSE
+*/

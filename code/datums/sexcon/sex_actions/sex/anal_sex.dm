@@ -1,4 +1,4 @@
-/datum/sex_action/anal_sex
+/*/datum/sex_action/anal_sex
 	name = "Sodomize them"
 	stamina_cost = 1.0
 
@@ -77,3 +77,4 @@
 	if(user.sexcon.finished_check())
 		return TRUE
 	return FALSE
+*/

@@ -1,4 +1,4 @@
-/datum/sex_action/toy_vagina
+/*/datum/sex_action/toy_vagina
 	name = "Pleasure cunt with toy"
 
 /datum/sex_action/toy_vagina/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
@@ -55,3 +55,4 @@
 	if(user.sexcon.finished_check())
 		return TRUE
 	return FALSE
+*/

@@ -1,4 +1,4 @@
-/datum/sex_action/crotch_nuzzle
+/*/datum/sex_action/crotch_nuzzle
 	name = "Nuzzle their crotch"
 
 /datum/sex_action/crotch_nuzzle/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
@@ -33,3 +33,4 @@
 	if(target.sexcon.finished_check())
 		return TRUE
 	return FALSE
+*/

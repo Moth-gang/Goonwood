@@ -1,4 +1,4 @@
-/datum/sex_action/facesitting
+/*/datum/sex_action/facesitting
 	name = "Sit on their face"
 
 /datum/sex_action/facesitting/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
@@ -43,3 +43,4 @@
 	if(user.sexcon.finished_check())
 		return TRUE
 	return FALSE
+*/

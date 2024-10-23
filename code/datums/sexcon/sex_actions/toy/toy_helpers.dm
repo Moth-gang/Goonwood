@@ -1,4 +1,4 @@
-/proc/get_dildo_in_either_hand(mob/living/carbon/human/user)
+/*/proc/get_dildo_in_either_hand(mob/living/carbon/human/user)
 	for(var/obj/item/thing in user.held_items)
 		if(thing == null)
 			continue
@@ -65,3 +65,4 @@
 			if(rand(1,10) == 1)
 				H.fire_act(1,2)
 				H.freak_out()
+*/

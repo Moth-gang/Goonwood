@@ -1,4 +1,4 @@
-/datum/sex_action/force_footjob
+/*/datum/sex_action/force_footjob
 	name = "Use their feet to get off"
 	check_same_tile = FALSE
 	require_grab = TRUE
@@ -38,3 +38,4 @@
 
 /datum/sex_action/force_footjob/on_finish(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	user.visible_message(span_warning("[user] pulls their cock out from inbetween [target]'s feet."))
+*/

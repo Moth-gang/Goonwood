@@ -1,4 +1,4 @@
-/datum/sex_action/ear_sex
+/*/datum/sex_action/ear_sex
 	name = "Fuck their Ear"
 	stamina_cost = 1.0
 
@@ -52,3 +52,4 @@
 	if(user.sexcon.finished_check())
 		return TRUE
 	return FALSE
+*/

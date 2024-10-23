@@ -1,4 +1,4 @@
-/datum/sex_action/scissoring
+/*/datum/sex_action/scissoring
 	name = "Scissor them"
 
 /datum/sex_action/scissoring/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
@@ -40,3 +40,4 @@
 
 /datum/sex_action/scissoring/on_finish(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	user.visible_message(span_warning("[user] stops scissoring with [target]."))
+*/

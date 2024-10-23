@@ -1,4 +1,4 @@
-/datum/sex_action/force_suck_balls
+/*/datum/sex_action/force_suck_balls
 	name = "Force them to suck balls"
 	require_grab = TRUE
 	stamina_cost = 1.0
@@ -46,3 +46,4 @@
 	if(user.sexcon.finished_check())
 		return TRUE
 	return FALSE
+*/

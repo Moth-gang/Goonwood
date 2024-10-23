@@ -1,4 +1,4 @@
-/datum/sex_action/toy_other_anal
+/*/datum/sex_action/toy_other_anal
 	name = "Use toy on their butt"
 
 /datum/sex_action/toy_other_anal/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
@@ -63,3 +63,4 @@
 	if(target.sexcon.finished_check())
 		return TRUE
 	return FALSE
+*/

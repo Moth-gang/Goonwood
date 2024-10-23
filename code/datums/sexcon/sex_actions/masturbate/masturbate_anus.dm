@@ -1,4 +1,4 @@
-/datum/sex_action/masturbate_anus
+/*/datum/sex_action/masturbate_anus
 	name = "Finger butt"
 
 /datum/sex_action/masturbate_anus/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
@@ -30,3 +30,4 @@
 	if(user.sexcon.finished_check())
 		return TRUE
 	return FALSE
+*/

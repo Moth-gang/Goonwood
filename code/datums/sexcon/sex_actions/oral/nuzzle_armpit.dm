@@ -1,4 +1,4 @@
-/datum/sex_action/armpit_nuzzle
+/*/datum/sex_action/armpit_nuzzle
 	name = "Nuzzle their armpit"
 
 /datum/sex_action/armpit_nuzzle/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
@@ -25,3 +25,4 @@
 
 /datum/sex_action/armpit_nuzzle/on_finish(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	user.visible_message(span_warning("[user] stops nuzzling [target]'s armpit..."))
+*/

@@ -1,4 +1,4 @@
-/datum/sex_controller
+/*/datum/sex_controller
 	/// The user and the owner of the controller
 	var/mob/living/carbon/human/user
 	/// Target of our actions, can be ourself
@@ -774,3 +774,4 @@
 				var/obj/item/bodypart/groin = target.get_bodypart(check_zone(BODY_ZONE_PRECISE_GROIN))
 				groin.add_wound(/datum/wound/fracture)
 			}
+*/

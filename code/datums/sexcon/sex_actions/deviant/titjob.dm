@@ -1,4 +1,4 @@
-/datum/sex_action/titjob
+/*/datum/sex_action/titjob
 	name = "Use their tits to get off"
 
 /datum/sex_action/titjob/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
@@ -45,3 +45,4 @@
 		user.visible_message(span_warning("[user] pulls his cock away from [target]'s body."))
 	else
 		user.visible_message(span_warning("[user] pulls his cock out from inbetween [target]'s tits."))
+*/

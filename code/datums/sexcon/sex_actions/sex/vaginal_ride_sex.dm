@@ -1,4 +1,4 @@
-/datum/sex_action/vaginal_ride_sex
+/*/datum/sex_action/vaginal_ride_sex
 	name = "Ride them"
 	stamina_cost = 1.0
 	aggro_grab_instead_same_tile = FALSE
@@ -68,3 +68,4 @@
 	if(user.sexcon.finished_check())
 		return TRUE
 	return FALSE
+*/

@@ -1,4 +1,4 @@
-/datum/sex_action/throat_sex
+/*/datum/sex_action/throat_sex
 	name = "Fuck their throat"
 	stamina_cost = 1.0
 
@@ -55,3 +55,4 @@
 	if(user.sexcon.finished_check())
 		return TRUE
 	return FALSE
+*/

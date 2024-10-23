@@ -1,4 +1,4 @@
-/datum/sex_action/force_suck_nipples
+/*/datum/sex_action/force_suck_nipples
 	name = "Force them to suck nipples"
 	require_grab = TRUE
 	stamina_cost = 1.0
@@ -50,3 +50,4 @@
 	if(user.sexcon.finished_check())
 		return TRUE
 	return FALSE
+*/

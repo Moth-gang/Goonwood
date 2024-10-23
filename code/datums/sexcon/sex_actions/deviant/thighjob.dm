@@ -1,4 +1,4 @@
-/datum/sex_action/thighjob
+/*/datum/sex_action/thighjob
 	name = "Use their thighs to get off"
 
 /datum/sex_action/thighjob/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
@@ -37,3 +37,4 @@
 		user.visible_message(span_warning("[user] stops humping [target]'s thigh."))
 	else
 		user.visible_message(span_warning("[user] pulls his cock out from inbetween [target]'s thighs."))
+*/

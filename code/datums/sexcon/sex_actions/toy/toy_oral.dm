@@ -1,4 +1,4 @@
-/datum/sex_action/toy_oral
+/*/datum/sex_action/toy_oral
 	name = "Swallow toy"
 
 /datum/sex_action/toy_oral/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
@@ -48,3 +48,4 @@
 	if(user.sexcon.finished_check())
 		return TRUE
 	return FALSE
+*/
