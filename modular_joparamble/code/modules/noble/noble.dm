@@ -7,7 +7,7 @@
 	faction = "Station"
 	total_positions = 5
 	spawn_positions = 5
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = ALL_RACES_TYPES
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
 	allowed_patrons = ALL_DIVINE_PATRONS
@@ -46,6 +46,7 @@
 	name = "Любовница"
 	tutorial = "С самых ранних лет вас готовили как будущую жену, а то и наложницу. Тем не менее вы стали желанной девой для разных лордов, благодаря своей красоте и опыту в видении дворцовых дел. Вы достойный кандидат в жёны, потому бы и надо успеть найти себе достойного мужа, пока вы не стали ненужной старухой."
 	allowed_sexes = list(FEMALE)
+	allowed_races = ALL_RACES_TYPES
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, )
 	outfit = /datum/outfit/job/roguetown/noble/lover
 	category_tags = list(CTAG_NOBLE)
@@ -86,6 +87,7 @@
 	name = "Благородный рыцарь"
 	tutorial = "С самых ранних лет вам не находилось лучше дела, чем практики с разным оружием и ношении доспехов, а так же верховая езда. Множество наставников вам помогало обрести нужны рыцарский опыт. Благодаря этому вы стали достойным противником в любом бою."
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
+	allowed_races = ALL_RACES_TYPES
 	outfit = /datum/outfit/job/roguetown/noble/knight
 	category_tags = list(CTAG_NOBLE)
 
@@ -141,6 +143,7 @@
 	name = "Отвергая магию"
 	tutorial = "В раннем детстве у вас обнаружили странный дар? Проклятье? Неважно - вы отвергаете магию почти в любом её проявлении. К несчастью данное явление до конца не ясно, но вам это в жизни не сильно мешало. Вы шли дальше по жизненному пути дворянина, изредко прерываясь на приезжих магов и лекарей, что желали изучить вас и то как голубая кровь содержит такие дивные свойства. Слава Богам что вы не родились чернью имея то же самое. Вас бы запытали эксперементами."
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
+	allowed_races = ALL_RACES_TYPES
 	pickprob = 11
 	outfit = /datum/outfit/job/roguetown/noble/antimage
 	category_tags = list(CTAG_NOBLE)
@@ -203,6 +206,7 @@
 	name = "Богач"
 	tutorial = "Вам повезло с происхождением и с тем как продуктивно вы проводили своё время. Всю вашу жизнь вас окружало богатство и польза от этого богатсва. И вот вам хватило времени, чтобы немного потратить свои сбережения на деятельность в этом Богами забытом месте."
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
+	allowed_races = ALL_RACES_TYPES
 	outfit = /datum/outfit/job/roguetown/noble/rich
 	category_tags = list(CTAG_NOBLE)
 
@@ -245,6 +249,7 @@
 	tutorial = "Ещё с пелёнок вам хотелось помахать своими ручками мечом. За многие годы вы набрались многому опыту от окружавших вас наставников по фехтованию. Вы заверены самим собой, что только клинки могут вас спасти в любой ситуации. Буд-то это рапира или просто старый ржавый меч. И вот вы прибываете сюда с целью вновь по-практиковаться в своих умениях и найти себе противника, чтобы тот испытал вас."
 	pickprob = 11
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
+	allowed_races = ALL_RACES_TYPES
 	outfit = /datum/outfit/job/roguetown/noble/duelist
 	category_tags = list(CTAG_NOBLE)
 
@@ -286,6 +291,7 @@
 	name = "Обычный дворянин"
 	tutorial = "Ваша жизнь протекала не столь насыщенно, чтобы чем-то гордиться или горчить о прошлом. Вы самый обычный дворянин, образ которого давно стал стереотипом не только в этих землях."
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
+	allowed_races = ALL_RACES_TYPES
 	outfit = /datum/outfit/job/roguetown/noble/norm
 	category_tags = list(CTAG_NOBLE)
 
