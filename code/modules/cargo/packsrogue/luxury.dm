@@ -195,8 +195,8 @@
 	name = "Scroll of Ray of Frost"
 	cost = 50
 	contains = list(/obj/item/book/granter/spell/spells5e/rayoffrost5e)
-
-/*/datum/supply_pack/rogue/luxury/acrobat
+/*
+/datum/supply_pack/rogue/luxury/acrobat
 	name = "Fragment of the Acrobat"
 	cost = 200
 	contains = list(/obj/item/book/granter/trait/acrobat)
@@ -323,4 +323,5 @@
 /datum/supply_pack/rogue/luxury/mending5e
 	name = "Scroll of Ray of Frost"
 	cost = 50
-	contains = list(/obj/item/book/granter/spell/spells5e/rayoffrost5e) */
+	contains = list(/obj/item/book/granter/spell/spells5e/rayoffrost5e)
+*/

@@ -4,5 +4,16 @@
 #include "modules\client\customizer\customizers\organ\genitals.dm"
 #include "_DEFINES\DNA.dm"
 #include "_DEFINES\preferences.dm"
+#include "modules\roguemachine\steward.dm"
+#include "modules\noble\noble.dm"
 #include "modules\whitelist\whitelist.dm"
 #endif
+// BEGIN_INTERNALS
+// END_INTERNALS
+// BEGIN_FILE_DIR
+#define FILE_DIR .
+// END_FILE_DIR
+// BEGIN_PREFERENCES
+// END_PREFERENCES
+// BEGIN_INCLUDE
+// END_INCLUDE
