@@ -1,4 +1,4 @@
-/datum/sex_action/force_crotch_nuzzle
+/*/datum/sex_action/force_crotch_nuzzle
 	name = "Force them to nuzzle"
 	require_grab = TRUE
 	stamina_cost = 1.0
@@ -35,3 +35,4 @@
 	if(user.sexcon.finished_check())
 		return TRUE
 	return FALSE
+*/

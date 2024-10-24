@@ -1,4 +1,4 @@
-/datum/sex_action/masturbate_vagina
+/*/datum/sex_action/masturbate_vagina
 	name = "Stroke clit"
 
 /datum/sex_action/masturbate_vagina/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
@@ -35,3 +35,4 @@
 	if(user.sexcon.finished_check())
 		return TRUE
 	return FALSE
+*/

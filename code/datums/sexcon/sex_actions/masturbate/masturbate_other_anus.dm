@@ -1,4 +1,4 @@
-/datum/sex_action/masturbate_other_anus
+/*/datum/sex_action/masturbate_other_anus
 	name = "Finger their butt"
 	check_same_tile = FALSE
 
@@ -43,3 +43,4 @@
 	if(target.sexcon.finished_check())
 		return TRUE
 	return FALSE
+*/

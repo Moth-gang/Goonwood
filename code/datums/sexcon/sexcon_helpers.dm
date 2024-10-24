@@ -1,4 +1,4 @@
-/datum/looping_sound/femhornylite
+/*/datum/looping_sound/femhornylite
 	mid_sounds = list('sound/vo/female/gen/se/horny1loop (1).ogg')
 	mid_length = 470
 	volume = 20
@@ -90,3 +90,4 @@
 	if(!turfu || !isturf(turfu))
 		return
 	new /obj/effect/decal/cleanable/coom(turfu)
+*/

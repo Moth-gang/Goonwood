@@ -1,4 +1,4 @@
-/datum/sex_action/masturbate_other_vagina
+/*/datum/sex_action/masturbate_other_vagina
 	name = "Stroke their clit"
 	check_same_tile = FALSE
 
@@ -48,3 +48,4 @@
 	if(target.sexcon.finished_check())
 		return TRUE
 	return FALSE
+*/

@@ -1,4 +1,4 @@
-/datum/sex_action/rimming
+/*/datum/sex_action/rimming
 	name = "Rim them"
 
 /datum/sex_action/rimming/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
@@ -42,3 +42,4 @@
 	if(target.sexcon.finished_check())
 		return TRUE
 	return FALSE
+*/

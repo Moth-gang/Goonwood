@@ -1,4 +1,4 @@
-/datum/sex_action/tonguebath
+/*/datum/sex_action/tonguebath
 	name = "Bathe with tongue"
 
 /datum/sex_action/tonguebath/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
@@ -32,3 +32,4 @@
 	if(target.sexcon.finished_check())
 		return TRUE
 	return FALSE
+*/

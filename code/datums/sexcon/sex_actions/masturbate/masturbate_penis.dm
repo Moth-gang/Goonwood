@@ -1,4 +1,4 @@
-/datum/sex_action/masturbate_penis
+/*/datum/sex_action/masturbate_penis
 	name = "Jerk off"
 
 /datum/sex_action/masturbate_penis/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
@@ -38,3 +38,4 @@
 	if(user.sexcon.finished_check())
 		return TRUE
 	return FALSE
+*/

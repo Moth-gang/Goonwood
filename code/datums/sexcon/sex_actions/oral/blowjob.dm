@@ -1,4 +1,4 @@
-/datum/sex_action/blowjob
+/*/datum/sex_action/blowjob
 	name = "Suck them off"
 	check_same_tile = FALSE
 
@@ -57,3 +57,4 @@
 	if(target.sexcon.finished_check())
 		return TRUE
 	return FALSE
+*/

@@ -1,4 +1,4 @@
-/datum/sex_action/force_foot_lick
+/*/datum/sex_action/force_foot_lick
 	name = "Force them to lick your feet"
 	check_same_tile = FALSE
 	require_grab = TRUE
@@ -31,3 +31,4 @@
 
 /datum/sex_action/force_foot_lick/on_finish(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	user.visible_message(span_warning("[user] pulls their feet away from [target]'s head."))
+*/

@@ -1,4 +1,4 @@
-/datum/sex_action/masturbate_breasts
+/*/datum/sex_action/masturbate_breasts
 	name = "Rub breasts"
 
 /datum/sex_action/masturbate_breasts/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
@@ -33,3 +33,4 @@
 	if(user.sexcon.finished_check())
 		return TRUE
 	return FALSE
+*/
