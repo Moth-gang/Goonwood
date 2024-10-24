@@ -12117,7 +12117,6 @@
 	},
 /area/rogue/indoors)
 "hdG" = (
-/obj/item/rogueweapon/sword/long/vlord,
 /obj/structure/closet/crate/chest,
 /turf/open/floor/rogue/churchbrick,
 /area/rogue/indoors)
